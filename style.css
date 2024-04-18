@@ -66,13 +66,14 @@ body {
   width: 100dvw;
   top: 0;
   z-index: -10;
+  opacity: 0.97;
 }
 
 .header__checkbox:checked ~ .header__nav {
   display: flex;
 }
 
-.header__ul {
+.header__nav-ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,20 +83,20 @@ body {
   gap: 45px;
 }
 
-.header__li {
+.header__nav-li {
   list-style: none;
 }
 
-.header__a {
+.header__nav-a {
   text-decoration: none;
   color: var(--color-texto);
 }
 
-.header__a:hover {
+.header__nav-a:hover {
   text-decoration: underline;
 }
 
-aside {
+article {
   height: 100dvh;
 }
 
@@ -109,7 +110,7 @@ aside {
     height: auto;
   }
 
-  .header__ul {
+  .header__nav-ul {
     flex-direction: row;
     height: auto;
     gap: 20px;
@@ -119,4 +120,15 @@ aside {
   .header__open-toggle {
     display: none;
   }
+}
+
+/* ABOUT ME */
+
+main {
+  margin: 0px 20px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
 }
