@@ -10,6 +10,10 @@
       type="image.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <meta
       name="description"
       content="Web developer with experience in the Front-End with very interesting skills and projects"
@@ -62,30 +66,129 @@
     </header>
     <main>
       <article class="about-me">
-        <img
-          class="about-me__image"
-          src="https://github.com/Kenneth506CR.png"
-        />
+        <img class="about-me__image" src="./images/kenneth.png" alt="kenneth" />
         <div class="about-me__container">
-          <h1 class="about-me__container-title">Quien es Kenneth?</h1>
+          <h1 class="about-me__container-title">TITLE</h1>
           <p class="about-me__container-text">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
             labore placeat recusandae, sapiente asperiores quis delectus
             aspernatur molestias odio dolor, suscipit blanditiis pariatur
-            repellat? Dolore nulla unde quae ipsa facilis. Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Praesentium delectus, nam
-            aliquam nostrum mollitia, molestiae labore facere beatae unde
-            architecto nihil totam incidunt dolor possimus dignissimos, error
-            cum magnam. Sapiente.
+            repellat?
           </p>
-          <button class="about-me__container-button">Download CV</button>
         </div>
+        <button class="about-me__container-button">Download CV</button>
+        <section class="about-me__social-media">
+          <button class="social-media__button">LinkedInd</button>
+          <button class="social-media__button">GitHud</button>
+          <button class="social-media__button">Instagram</button>
+          <button class="social-media__button">WhatsApp</button>
+        </section>
       </article>
-      <section>
-        <h2>SKILLS</h2>
-        <div></div>
+      <section class="skills">
+        <ul class="skills__ul">
+          <li class="skills__item">
+            <span class="skills__name">HTML</span>
+            <div class="skills__load-bar">
+              <div class="load-bar__bar bar--90">90%</div>
+            </div>
+          </li>
+          <li class="skills__item">
+            <span class="skills__name">CSS</span>
+            <div class="skills__load-bar">
+              <div class="load-bar__bar bar--75">75%</div>
+            </div>
+          </li>
+          <li class="skills__item">
+            <span class="skills__name">JavaScript</span>
+            <div class="skills__load-bar">
+              <div class="load-bar__bar bar--70">70%</div>
+            </div>
+          </li>
+          <li class="skills__item">
+            <span class="skills__name">C++</span>
+            <div class="skills__load-bar">
+              <div class="load-bar__bar bar--60">60%</div>
+            </div>
+          </li>
+          <li class="skills__item">
+            <span class="skills__name">React Js</span>
+            <div class="skills__load-bar">
+              <div class="load-bar__bar bar--65">65%</div>
+            </div>
+          </li>
+          <li class="skills__item">
+            <span class="skills__name">Angular</span>
+            <div class="skills__load-bar">
+              <div class="load-bar__bar bar--40">40%</div>
+            </div>
+          </li>
+          <li class="skills__item">
+            <span class="skills__name">Bootstrap</span>
+            <div class="skills__load-bar">
+              <div class="load-bar__bar bar--40">40%</div>
+            </div>
+          </li>
+          <li class="skills__item">
+            <span class="skills__name">Tailwind</span>
+            <div class="skills__load-bar">
+              <div class="load-bar__bar bar--50">50%</div>
+            </div>
+          </li>
+        </ul>
       </section>
+      <section class="experience">
+        <div class="experience-box">
+          <h3 class="experience-box__title">TITLE</h3>
+          <p class="experience-box__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam eaque quibusdam saepe earum molestias reprehenderit harum
+            nulla assumenda doloremque nisi at, neque asperiores veniam minima
+            itaque deleniti exercitationem et?
+          </p>
+        </div>
+        <div class="experience-box">
+          <h3 class="experience-box__title">TITLE</h3>
+          <p class="experience-box__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            numquam eaque quibusdam saepe earum molestias reprehenderit harum
+            nulla assumenda doloremque nisi at, neque asperiores veniam minima
+            itaque deleniti exercitationem et?
+          </p>
+        </div>
+      </section>
+
+      <form class="form">
+        <div class="form__input-label">
+          <label class="form__label" for="first-name">First name</label>
+          <input
+            class="form__input"
+            type="text"
+            placeholder="John"
+            id="first-name"
+          />
+        </div>
+        <div class="form__input-label">
+          <label class="form__label">Last name</label>
+          <input class="form__input" type="text" placeholder="Carvajal" />
+        </div>
+        <div class="form__input-label">
+          <label class="form__label">Email</label>
+          <input
+            class="form__input"
+            type="email"
+            placeholder="John@gmail.com"
+          />
+        </div>
+
+        <div class="form__input-label">
+          <label class="form__label">Message</label>
+          <textarea class="form__input text-area">
+Write your message...</textarea
+          >
+        </div>
+        <button class="form__submit" type="submit">Enviar</button>
+      </form>
     </main>
-    <footer></footer>
+    <footer class="footer"><p>copyrigh © 2024</p></footer>
   </body>
 </html>
