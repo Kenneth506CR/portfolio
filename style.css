@@ -293,8 +293,8 @@ main {
 }
 
 .projects__img-tec {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 /* FOOTER */
@@ -307,3 +307,5 @@ main {
   align-content: center;
   color: var(--color-texto);
 }
+
+/* <a target="_blank" href="https://icons8.com/icon/S5biqohaDgd1/menu">Menú</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a> */
