@@ -144,6 +144,8 @@ main {
   grid-area: image;
   width: 110px;
   margin: auto;
+  filter: drop-shadow(0 0 3px #0007);
+  z-index: -10;
 }
 
 .about-me__container-button {
@@ -151,6 +153,11 @@ main {
   width: 140px;
   height: 35px;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
 }
 
 .about-me__social-media {
@@ -161,8 +168,9 @@ main {
 }
 
 .social-media__button {
-  width: 80px;
-  height: 40px;
+  width: 70px;
+  height: 35px;
+  border-radius: 5px;
 }
 
 /* SECCION SKILLS */
@@ -185,6 +193,7 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: 10px 0;
+  font-weight: 700;
 }
 
 .skills__load-bar {
@@ -227,6 +236,32 @@ main {
   width: 60%;
 }
 
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+
+.habilidades__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  width: 62px;
+  background-color: var(--color-primario);
+  gap: 5px;
+  padding: 5px 0;
+  color: #fff9;
+  border-radius: 5px;
+}
+
+.habilidades__title {
+  margin: 0;
+}
+
 /* SECTION FORM */
 
 .form {
@@ -236,7 +271,7 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding: 30px 0;
+  padding: 30px 0 15px 0;
   gap: 10px;
   margin-bottom: 50px;
 }
@@ -274,6 +309,7 @@ main {
 .projects {
   background-color: var(--color-primario);
   margin: 30px 0;
+  border-radius: 0 0 10px 10px;
 }
 
 .projects__img {
@@ -295,6 +331,22 @@ main {
 .projects__img-tec {
   width: 40px;
   height: 40px;
+}
+
+/* SECTION QUESTIONS */
+
+.questions {
+  height: 30dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.questions__details {
+  border: 2px solid var(--color-primario);
+  width: 300px;
+  height: 35px;
 }
 
 /* FOOTER */
