@@ -120,12 +120,12 @@ body {
   }
 }
 
-/* ABOUT ME */
-
 main {
   max-width: 600px;
   margin: 0px 20px;
 }
+
+/* ABOUT ME */
 
 .about-me {
   display: grid;
@@ -135,7 +135,7 @@ main {
     "social social";
   margin: 30px 0;
   gap: 20px;
-  height: 100dvh;
+  height: auto;
 }
 
 .about-me__container {
@@ -168,76 +168,16 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .social-media__button {
   width: 70px;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 55px;
 }
 
 /* SECCION SKILLS */
-
-.skills {
-  border-top: 3px solid #fff;
-  display: flex;
-  flex-direction: column;
-}
-
-.skills__ul {
-  width: 100%;
-  margin: 40px 0;
-}
-
-.skills__item {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
-  font-weight: 700;
-}
-
-.skills__load-bar {
-  border: 2px solid #000;
-  border-radius: 5px;
-  width: 70%;
-}
-
-.load-bar__bar {
-  background-color: #413d3d;
-  border-radius: 5px;
-  border: 1px solid #fff;
-}
-
-.bar--70 {
-  width: 70%;
-}
-
-.bar--90 {
-  width: 90%;
-}
-
-.bar--75 {
-  width: 75%;
-}
-
-.bar--40 {
-  width: 40%;
-}
-
-.bar--65 {
-  width: 65%;
-}
-
-.bar--50 {
-  width: 50%;
-}
-
-.bar--60 {
-  width: 60%;
-}
 
 .habilidades {
   display: flex;
@@ -245,6 +185,26 @@ main {
   flex-direction: row;
   justify-content: center;
   gap: 8px;
+  padding: 50px 0 100px 0;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.title__image {
+  width: 30px;
+  height: 30px;
+}
+
+.title__text {
+  margin: 0;
 }
 
 .habilidades__item {
@@ -261,8 +221,19 @@ main {
   border-radius: 5px;
 }
 
+.habilidades__img {
+  width: 35px;
+  height: 35px;
+}
+
 .habilidades__title {
   margin: 0;
+}
+
+/* SECTION EXPERIENCE */
+
+.experience {
+  padding: 50px 0 100px 0;
 }
 
 /* SECTION FORM */
@@ -309,7 +280,7 @@ main {
 
 /* PROJECTS */
 
-.projects {
+.projects__item {
   background-color: var(--color-primario);
   margin: 30px 0;
   border-radius: 0 0 10px 10px;
@@ -343,8 +314,8 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
-  gap: 10px;
-  padding: 10px 0;
+  gap: 15px;
+  padding: 50px 0 100px 0;
 }
 .questions__details {
   border: 2px solid var(--color-primario);
