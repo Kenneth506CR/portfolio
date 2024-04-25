@@ -1,0 +1,20 @@
+---
+const {
+  experience: { company, position, date, tasks, achievements },
+} = Astro.props;
+---
+
+<div class="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4">
+  <h4 class="font-bold text-xl mb-2">{company}</h4>
+  <h3 class="font-bold text-gray-700 mb-2">{position} | <time>{date}</time></h3>
+  <ul class="list-disc list-inside space-y-2">
+    {
+      tasks.map((task) => (
+        <li class="text-gray-700">
+          <p>{task}</p>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="text-gray-700 mt-4">{achievements}</p>
+</div>

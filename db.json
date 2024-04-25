@@ -1,0 +1,29 @@
+{
+  "post": [
+    {
+      "company": "Altiva Soluciones S.A",
+      "position": "Fullstack Developer",
+      "date": "6/2023 - 12/2023",
+      "tasks": [
+        "Desarrollo de módulos para la aplicación web principal de la empresa, abarcando tanto el Frontend como el Backend.",
+        "Tecnologías Frontend como React Js y React Native, así como el framework Bootstrap para el diseño.",
+        "Implementación del Backend utilizando .Net y Swagger para la documentación además del manejo de la Base de datos SQL Server.",
+        "Diseño e implementación de funcionalidades para la generación de tickets y facturas utilizando JSPDF."
+      ],
+      "achievements": "Concluir con los módulos asignados en la aplicación web y pasar a aplicarlo a una aplicación móvil para un cliente en específico."
+    },
+    {
+      "company": "Bio&Gen",
+      "position": "Software Engineer",
+      "date": "6/2022 - 6/2023",
+      "tasks": [
+        "Colaboración en la cobertura de necesidades del cliente junto a un equipo de trabajo, desde el levantamiento de requerimientos.",
+        "Desarrollo de la interfaz de usuario utilizando React JS y Tailwind CSS.",
+        "Implementación del Backend con Node Js y Express Js, enlazado con la Base de datos Mongo Db.",
+        "Realización de pruebas unitarias con Jest para garantizar la calidad del software.",
+        "Gestión de tareas utilizando Azure DevOps y aplicación de la metodología SCRUM para el seguimiento y control del proyecto."
+      ],
+      "achievements": "Culminar el proyecto en los tiempos establecidos en los sprints y realizar el deploy y entrega del proyecto al cliente"
+    }
+  ]
+}
