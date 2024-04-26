@@ -1,10 +1,11 @@
 ---
+import Header from "../components/Header.astro";
 import Experience from "../components/Experience.astro";
 const response = await fetch("http://localhost:3000/post");
 const experiences = await response.json();
 ---
 
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -12,9 +13,20 @@ const experiences = await response.json();
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body>
-    <section class="w-600px m-auto">
-      {experiences.map((experience) => <Experience experience={experience} />)}
-    </section>
+  <body class="bg-black font-principal">
+    <header>
+      <Header />
+    </header>
+    <main class="mx-4">
+      <section
+        class="flex flex-col justify-evenly content-center items-center py-4 gap-8px"
+      >
+        {
+          experiences.map((experience) => (
+            <Experience experience={experience} />
+          ))
+        }
+      </section>
+    </main>
   </body>
 </html>
