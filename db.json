@@ -1,5 +1,5 @@
 {
-  "post": [
+  "experiences": [
     {
       "company": "Altiva Soluciones S.A",
       "position": "Fullstack Developer",
@@ -15,7 +15,7 @@
     {
       "company": "Bio&Gen",
       "position": "Software Engineer",
-      "date": "6/2022 - 6/2023",
+      "date": "6/2022 - 10/2023",
       "tasks": [
         "Colaboración en la cobertura de necesidades del cliente junto a un equipo de trabajo, desde el levantamiento de requerimientos.",
         "Desarrollo de la interfaz de usuario utilizando React JS y Tailwind CSS.",
@@ -24,6 +24,65 @@
         "Gestión de tareas utilizando Azure DevOps y aplicación de la metodología SCRUM para el seguimiento y control del proyecto."
       ],
       "achievements": "Culminar el proyecto en los tiempos establecidos en los sprints y realizar el deploy y entrega del proyecto al cliente"
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "HTML",
+      "image": "html5.svg"
+    },
+    {
+      "name": "CSS",
+      "image": "css3.svg"
+    },
+    {
+      "name": "JavaScript",
+      "image": "javascript.svg"
+    },
+    {
+      "name": "React JS",
+      "image": "reaccionar.svg"
+    },
+    {
+      "name": "Angular",
+      "image": "angular.svg"
+    },
+    {
+      "name": "Astro JS",
+      "image": "astro.svg"
+    },
+    {
+      "name": "Tailwind",
+      "image": "tailwind.svg"
+    },
+    {
+      "name": "Bootstrap",
+      "image": "bootstrap.svg"
+    },
+    {
+      "name": "Sass",
+      "image": "Sass.svg"
+    },
+    {
+      "name": "C++",
+      "image": "c++.svg"
+    },
+    {
+      "name": "Python",
+      "image": "python.svg"
+    },
+    {
+      "name": "Ionic",
+      "image": "ionic.svg"
+    },
+    {
+      "name": "SQL Server",
+      "image": "sql.svg"
+    },
+    {
+      "name": "Mongo DB",
+      "image": "mongo.png"
     }
   ]
 }
