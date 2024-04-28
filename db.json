@@ -84,5 +84,33 @@
       "name": "Mongo DB",
       "image": "mongo.png"
     }
+  ],
+
+  "courses": [
+    {
+      "name": "Bachillerato en Ingenieria en Sistemas de Informacion",
+      "date": "2022 - 2023",
+      "institution": "Universidad Nacional de Costa Rica"
+    },
+    {
+      "name": "Diplomado en Desarrollo de Aplicaciones Informarticas",
+      "date": "2019 - 2022",
+      "institution": "Universidad Nacional de Costa Rica"
+    },
+    {
+      "name": "SCRUM Fundamentals",
+      "date": "2022",
+      "institution": "SCRUMstudy"
+    },
+    {
+      "name": "Python Essentials",
+      "date": "2023 - Actualidad",
+      "institution": "Instituto Nacional de Aprendizaje"
+    },
+    {
+      "name": "Fundamentos de Ciberseguridad",
+      "date": "2023 - Actualidad",
+      "institution": "CISCO"
+    }
   ]
 }

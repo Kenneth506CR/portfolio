@@ -2,10 +2,13 @@
 import Header from "../components/Header.astro";
 import Skill from "../components/Skill.astro";
 import Experience from "../components/Experience.astro";
+import Course from "../components/Course.astro";
 const responseExperiences = await fetch("http://localhost:3000/experiences");
 const responseSkills = await fetch("http://localhost:3000/skills");
+const responseCourses = await fetch("http://localhost:3000/courses");
 const experiences = await responseExperiences.json();
 const skills = await responseSkills.json();
+const courses = await responseCourses.json();
 ---
 
 <html lang="es">
@@ -29,6 +32,13 @@ const skills = await responseSkills.json();
       >
         <h2 class="text-white w-full text-center mb-4">SKILLS</h2>
         {skills && skills.map((skill) => <Skill skill={skill} />)}
+      </section>
+      <!-- SECTION COURSES -->
+      <section
+        class="flex flex-col justify-evenly content-center items-center py-4 gap-[20px]"
+      >
+        <h2 class="text-white">COURSES</h2>
+        {courses && courses.map((course) => <Course course={course} />)}
       </section>
       <!-- SECCION EXPERIENCES -->
       <section

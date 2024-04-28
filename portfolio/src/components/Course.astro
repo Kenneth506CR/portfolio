@@ -1,0 +1,19 @@
+---
+const {
+  course: { name, date, institution },
+} = Astro.props;
+---
+
+<div>
+  <ul>
+    {
+      course.map((course) => (
+        <li class="text-gray-700">
+          <h3>{name}</h3>
+          <p>{date}</p>
+          <p>{institution}</p>
+        </li>
+      ))
+    }
+  </ul>
+</div>
