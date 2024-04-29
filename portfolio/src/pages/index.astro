@@ -19,7 +19,9 @@ const courses = await responseCourses.json();
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
-  <body class="bg-black font-principal">
+
+  <!--   SECTION BODY -->
+  <body class="bg-slate-950 font-principal text-[14px]">
     <!-- HEADER -->
     <header>
       <Header />
@@ -29,34 +31,35 @@ const courses = await responseCourses.json();
     <main class="mx-4">
       <!-- SECCION SKILLS -->
       <section
-        class="flex flex-row flex-wrap justify-center content-center items-center gap-[8px]"
+        class="max-w-[650px] m-auto flex flex-row flex-wrap justify-center content-center items-center gap-[8px]"
       >
-        <h2 class="text-white w-full text-center mb-4">SKILLS</h2>
+        <h2 class="text-slate-100 w-full text-center mb-12 mt-14">SKILLS</h2>
         {skills.map((skill) => <Skill skill={skill} />)}
       </section>
 
       <!-- SECTION COURSES -->
       <section
-        class="flex flex-col justify-evenly content-center items-center py-4 gap-[20px]"
+        class="flex flex-col justify-center content-center items-center gap-[2px]"
       >
-        <h2 class="text-white">COURSES</h2>
-
-        <ul>
-          {
-            courses.map((course) => (
-              <li class="text-gray-700 list-disc ">
-                <Course course={course} />
-              </li>
-            ))
-          }
-        </ul>
+        <h2 class="text-white mb-6 mt-14">COURSES</h2>
+        <div>
+          <ul>
+            {
+              courses.map((course) => (
+                <li class="text-slate-200 py-2">
+                  <Course course={course} />
+                </li>
+              ))
+            }
+          </ul>
+        </div>
       </section>
 
       <!-- SECCION EXPERIENCES -->
       <section
         class="flex flex-col justify-evenly content-center items-center py-4 gap-[20px]"
       >
-        <h2 class="text-white">EXPERIENCES</h2>
+        <h2 class="text-white my-8">EXPERIENCES</h2>
         {
           experiences.map((experience) => (
             <Experience experience={experience} />
