@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Skill from "../components/Skill.astro";
 import Experience from "../components/Experience.astro";
 import Course from "../components/Course.astro";
+import About from "../components/About.astro";
 const responseExperiences = await fetch("http://localhost:3000/experiences");
 const responseSkills = await fetch("http://localhost:3000/skills");
 const responseCourses = await fetch("http://localhost:3000/courses");
@@ -29,7 +30,12 @@ const courses = await responseCourses.json();
 
     <!-- MAIN -->
     <main class="mx-4">
-      <!-- SECCION SKILLS -->
+      <!-- SECTION ABOUT ME -->
+      <article>
+        <About />
+      </article>
+
+      <!-- SECTION SKILLS -->
       <section
         class="max-w-[650px] m-auto flex flex-row flex-wrap justify-center content-center items-center gap-[8px]"
       >
