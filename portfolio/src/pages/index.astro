@@ -1,12 +1,18 @@
 ---
+/* IMPORTS TO COMPONENTS */
 import Header from "../components/Header.astro";
-import Skill from "../components/Skill.astro";
-import Experience from "../components/Experience.astro";
-import Course from "../components/Course.astro";
 import About from "../components/About.astro";
+import Skill from "../components/Skill.astro";
+import Course from "../components/Course.astro";
+import Experience from "../components/Experience.astro";
+import Footer from "../components/Footer.astro";
+
+/* GET DATA TO JSON SERVER */
 const responseExperiences = await fetch("http://localhost:3000/experiences");
 const responseSkills = await fetch("http://localhost:3000/skills");
 const responseCourses = await fetch("http://localhost:3000/courses");
+
+/* FORMAT JSON AND SAVE TO VARIABLE */
 const experiences = await responseExperiences.json();
 const skills = await responseSkills.json();
 const courses = await responseCourses.json();
@@ -73,5 +79,11 @@ const courses = await responseCourses.json();
         }
       </section>
     </main>
+    <!-- SECTION FOOTER -->
+    <footer
+      class="bg-black gap-4 py-8 text-white flex flex-row justify-around content-center flex-wrap"
+    >
+      <Footer />
+    </footer>
   </body>
 </html>
