@@ -29,7 +29,7 @@ const courses = await responseCourses.json();
   </head>
 
   <!--   SECTION BODY -->
-  <body class="bg-slate-950 font-principal text-[14px]">
+  <body class="bg-white font-principal">
     <!-- HEADER -->
     <header>
       <Header />
@@ -46,7 +46,7 @@ const courses = await responseCourses.json();
       <section
         class="max-w-[650px] m-auto flex flex-row flex-wrap justify-center content-center items-center gap-[8px]"
       >
-        <h2 class="text-slate-100 w-full text-center mb-12 mt-14">SKILLS</h2>
+        <h2 class="text-black w-full text-center py-8">SKILLS</h2>
         {skills.map((skill) => <Skill skill={skill} />)}
       </section>
 
@@ -80,13 +80,14 @@ const courses = await responseCourses.json();
         }
       </section>
 
-      <form method="post">
+      <form method="post" class="py-8">
+        <h2 class="text-black text-center py-8">CONTACTO</h2>
         <Form />
       </form>
     </main>
     <!-- SECTION FOOTER -->
     <footer
-      class="bg-black gap-4 py-8 text-white flex flex-row justify-around content-center flex-wrap"
+      class="bg-black gap-4 py-8 text-white flex flex-col justify-around content-center flex-wrap px-4"
     >
       <Footer />
     </footer>
