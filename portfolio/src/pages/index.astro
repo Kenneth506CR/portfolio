@@ -5,6 +5,7 @@ import About from "../components/About.astro";
 import Skill from "../components/Skill.astro";
 import Course from "../components/Course.astro";
 import Experience from "../components/Experience.astro";
+import Form from "../components/Form.astro";
 import Footer from "../components/Footer.astro";
 
 /* GET DATA TO JSON SERVER */
@@ -78,6 +79,10 @@ const courses = await responseCourses.json();
           ))
         }
       </section>
+
+      <form method="post">
+        <Form />
+      </form>
     </main>
     <!-- SECTION FOOTER -->
     <footer
