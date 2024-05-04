@@ -55,12 +55,12 @@ const courses = await responseCourses.json();
       <section
         class="flex flex-col justify-center content-center items-center gap-[2px]"
       >
-        <h2 class="text-white mb-6 mt-14">COURSES</h2>
+        <h2 class="text-black mb-6 mt-14">FORMACION</h2>
         <div>
           <ul>
             {
               courses.map((course) => (
-                <li class="text-slate-200 py-2">
+                <li class="text-slate-200">
                   <Course course={course} />
                 </li>
               ))
