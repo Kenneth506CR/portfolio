@@ -5,20 +5,22 @@ const {
 ---
 
 <div
-  class="flex flex-col justify-center bg-white px-4 max-w-[650px] rounded-lg"
+  class="group flex flex-col justify-center px-4 max-w-[650px] py-3 bg-slate-900 rounded-lg my-4 hover:bg-slate-950 transition duration-500 hover:translate-x-2"
 >
-  <div class="border-l-4 border-double border-black">
+  <div
+    class="border-l-4 border-solid border-gray-300 border-b-3 shadow-md shadow-gray-500"
+  >
     <div class="relative">
       <div
-        class="shadow-lg bg-black h-4 w-4 absolute left-[-10px] top-[4px] rounded-full"
+        class="border-2 shadow-lg bg-gray-400 h-4 w-4 absolute left-[-10px] top-[4px] rounded-full group-hover:bg-black transition duration-600"
       >
       </div>
       <div class="pl-5">
-        <h4 class="font-bold text-blue-500">{name}</h4>
-        <p class="mt-2 text-sm text-gray-500">
+        <h4 class="font-bold text-gray-100">{name}</h4>
+        <p class="mt-2 text-sm text-gray-300">
           {institution}
         </p>
-        <span class="pt-2 pb-4 block text-sm font-semibold text-blue-500"
+        <span class="pt-2 pb-4 block text-sm font-semibold text-gray-200"
           >{date}</span
         >
       </div>
