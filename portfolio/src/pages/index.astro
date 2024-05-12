@@ -30,7 +30,7 @@ const courses = await responseCourses.json();
   </head>
 
   <!--   SECTION BODY -->
-  <body class="bg-gradient-to-b from-slate-900 to-slate-400 font-principal">
+  <body class="bg-gradient-to-b from-slate-800 to-slate-300 font-principal">
     <!-- HEADER -->
     <header>
       <Header />
@@ -47,7 +47,7 @@ const courses = await responseCourses.json();
       <section
         class="max-w-[650px] m-auto flex flex-row flex-wrap justify-center content-center items-center gap-[8px]"
       >
-        <h2 class="text-black w-full text-center py-8">SKILLS</h2>
+        <h2 class="text-black w-full text-center py-8">HABILIDADES</h2>
         {skills.map((skill) => <Skill skill={skill} />)}
       </section>
 
@@ -73,7 +73,7 @@ const courses = await responseCourses.json();
       <section
         class="flex flex-col justify-evenly content-center items-center py-4 gap-[20px]"
       >
-        <h2 class="text-black my-8">EXPERIENCES</h2>
+        <h2 class="text-black my-8">EXPERIENCIA LABORAL</h2>
         {
           experiences.map((experience) => (
             <Experience experience={experience} />
@@ -83,7 +83,7 @@ const courses = await responseCourses.json();
 
       <!--SECTION PROJECTS -->
       <section>
-        <h2 class="text-black text-center py-8">PROJECTS</h2>
+        <h2 class="text-black text-center py-8">PROYECTOS</h2>
         <Project />
       </section>
 

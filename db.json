@@ -2,8 +2,17 @@
   "experiences": [
     {
       "company": "Altiva Soluciones S.A",
+      "image": "/public/Altiva.png",
       "position": "Fullstack Developer",
       "date": "6/2023 - 12/2023",
+      "technologies": [
+        "C#",
+        ".Net",
+        "SQL server",
+        "React",
+        "React Native",
+        "Bootstrap"
+      ],
       "tasks": [
         "Desarrollo de módulos para la aplicación web principal de la empresa, abarcando tanto el Frontend como el Backend.",
         "Tecnologías Frontend como React Js y React Native, así como el framework Bootstrap para el diseño.",
@@ -14,8 +23,16 @@
     },
     {
       "company": "Bio&Gen",
+      "image": "/public/Bio&Gen.jpg",
       "position": "Software Engineer",
       "date": "6/2022 - 10/2023",
+      "technologies": [
+        "Node Js",
+        "Express Js",
+        "React",
+        "Mongo DB",
+        "Tailwind"
+      ],
       "tasks": [
         "Colaboración en la cobertura de necesidades del cliente junto a un equipo de trabajo, desde el levantamiento de requerimientos.",
         "Desarrollo de la interfaz de usuario utilizando React JS y Tailwind CSS.",
