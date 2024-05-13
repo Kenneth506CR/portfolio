@@ -21,7 +21,7 @@
     </div>
 
     <img
-      class="drop-shadow-[0_1px_3px_rgba(255,255,255,0.5)] w-[150px]"
+      class="drop-shadow-[0_1px_3px_rgba(255,255,255,0.5)] w-[150px] relartive z-0"
       src="/public/kenneth.png"
       alt="Kenneth image"
     />
@@ -44,24 +44,35 @@
         />
       </div>
     </button>
-    <div class="flex flex-row content-center justify-evenly items-center gap-2">
+    <div
+      class="rounded-2xl flex flex-row content-center justify-center items-center bg-gradient-to-r from-gray-400 to-gray-600"
+    >
       <button
-        class="w-[125px] flex gap-1 cursor-pointer text-white bg-gradient-to-r from-gray-800 to-black p-2 rounded-xl border border-gray-600 duration-200 hover:text-gray-300 hover:border-gray-800 hover:from-black hover:to-gray-900 hover:scale-[101%]"
+        class="bg-transparent px-4 cursor-pointer p-1 duration-200 hover:bg-gray-800 hover:scale-105 rounded-l-2xl group"
       >
-        <img src="/public/linkedin.svg" alt="LinkedIn" class="w-[25px]" />
-        LinkedIn
+        <img
+          src="/public/linkedin.svg"
+          alt="LinkedIn"
+          class="w-[38px] group-hover:drop-shadow-[0_1px_3px_rgb(255,255,255)]"
+        />
       </button>
       <button
-        class="w-[100px] flex gap-1 cursor-pointer text-white bg-gradient-to-r from-gray-800 to-black p-2 rounded-xl border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900"
+        class="px-4 p-1 hover:scale-105 duration-200 hover:bg-gray-800 group"
       >
-        <img src="/public/github.svg" alt="Github" class="w-[25px]" />
-        Github
+        <img
+          src="/public/github.svg"
+          alt="Github"
+          class="w-[38px] group-hover:drop-shadow-[0_1px_3px_rgb(255,255,255)]"
+        />
       </button>
       <button
-        class="w-[125px] flex gap-1 cursor-pointer text-white bg-gradient-to-r from-gray-800 to-black p-2 rounded-xl border border-gray-600 hover:scale-105 duration-200 hover:text-gray-500 hover:border-gray-800 hover:from-black hover:to-gray-900"
+        class="px-4 p-1 hover:scale-105 duration-200 hover:bg-gray-800 rounded-r-2xl group"
       >
-        <img src="/public/whatssapp.svg" alt="WhatsApp" class="w-[25px]" />
-        WhatsApp
+        <img
+          src="/public/whatssapp.svg"
+          alt="WhatsApp"
+          class="w-[38px] group-hover:drop-shadow-[0_1px_3px_rgb(255,255,255)]"
+        />
       </button>
     </div>
   </section>

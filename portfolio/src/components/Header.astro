@@ -2,36 +2,38 @@
 
 ---
 
-<nav class="bg-slate-300 w-full h-14">
-  <input type="checkbox" id="menu" class="peer hidden" />
-  <label
-    class="absolute z-50 font-bold text-[45px] transition-all cursor-pointer right-3 select-none"
-    for="menu">=</label
+<script>
+  const menuToggle = document.querySelector("#menu-toggle");
+  const menuButton = document.querySelector("#menu-button");
+  const nav = document.querySelector("#nav");
+
+  menuButton.addEventListener("click", () => {
+    if (menuToggle.getAttribute("checked")) {
+      nav.classList.add("hidden");
+      menuToggle.removeAttribute("checked");
+      menuButton.querySelector("img").src = "/public/menu.svg";
+    } else {
+      nav.classList.remove("hidden");
+      menuToggle.setAttribute("checked", "true");
+      menuButton.querySelector("img").src = "/public/close.svg";
+    }
+  });
+</script>
+
+<input type="checkbox" id="menu-toggle" class="hidden" />
+<label for="menu-toggle" id="menu-button">
+  <img src="/public/menu.svg" alt="menu" class="w-[42px]" id="menu" />
+</label>
+
+<nav class="hidden absolute inset-0 top-24 backdrop-blur-sm z-10" id="nav">
+  <ul
+    class="bg-opacity-90 bg-white w-[90%] mx-auto m-auto rounded-md text-center flex flex-col gap-6 py-6 font-bold content-center"
   >
-  <div
-    class="peer-checked:translate-x-0 transition-transform fixed inset-0 bg-gradient-to-b from-white/70 to-black/70 translate-x-full"
-  >
-    <ul
-      class="shadow-2xl bg-white w-[90%] mx-auto my-20 rounded-md h-max text-center flex flex-col gap-6 py-6 font-bold content-center"
-    >
-      <li>
-        <a href="#">About me</a>
-      </li>
-      <li>
-        <a href="#">Skills</a>
-      </li>
-      <li>
-        <a href="#">Experience </a>
-      </li>
-      <li>
-        <a href="#">Projects</a>
-      </li>
-      <li>
-        <a href="#">Questions</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
+    <li><a href="#">INICIO</a></li>
+    <li><a href="#">HABILIDADES</a></li>
+    <li><a href="#">FORMACION</a></li>
+    <li><a href="#">EXPERIENCIA LABORAL </a></li>
+    <li><a href="#">PROYECTOS</a></li>
+    <li><a href="#">CONTACTO</a></li>
+  </ul>
 </nav>
