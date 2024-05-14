@@ -1,23 +1,65 @@
 ---
-
+const data = [
+  {
+    image: "/public/Aperia.png",
+    title: "APERIA",
+    tecnologies: ["/public/html5.svg", "/public/css3.svg"],
+  },
+  {
+    image: "/public/Recetas.png",
+    title: "RECETAS",
+    tecnologies: ["/public/html5.svg", "/public/css3.svg"],
+  },
+  {
+    image: "/public/Presupuesto.png",
+    title: "GATOS MENSUALES",
+    tecnologies: [
+      "/public/html5.svg",
+      "/public/css3.svg",
+      "/public/javascript.svg",
+    ],
+  },
+  {
+    image: "/public/Cursos.png",
+    title: "PLATAFORMA DE CURSOS",
+    tecnologies: ["/public/html5.svg", "/public/css3.svg"],
+  },
+  {
+    image: "/public/Barberia.png",
+    title: "BARBERIA",
+    tecnologies: [
+      "/public/html5.svg",
+      "/public/css3.svg",
+      "/public/javascript.svg",
+    ],
+  },
+  {
+    image: "/public/Recetas-Angular.png",
+    title: "PLATILLOS TIPICOS",
+    tecnologies: [
+      "/public/html5.svg",
+      "/public/css3.svg",
+      "/public/javascript.svg",
+      "/public/angular.svg",
+    ],
+  },
+];
 ---
 
-<div
-  class="bg-gray-600 rounded-b-lg py-4 flex flex-col justify-evenly content-center items-center gap-4"
->
-  <div>
-    <img class="w-[250px]" src="/public/instagram.svg" alt="image project" />
-  </div>
-
-  <div class="bg-white p-2">
-    <p>TITLE</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto id in eius
-      molestias aliquam vel. Laudantium veniam placeat, dolore molestias
-      pariatur facere. Magnam sapiente dicta excepturi minima libero, fugit
-      quisquam.
-    </p>
-  </div>
-
-  <button class="bg-black text-white p-2 w-20 rounded-lg">vizualizar</button>
+<div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-1 md:gap-4">
+  {
+    data.map((d, i) => (
+      <div
+        class={`bg-white shadow rounded ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+      >
+        <img src={d.image} alt="..." class="w-full h-32 object-cover" />
+        <p class="px-1 mt-1 text-[12px] font-bold">{d.title}</p>
+        <div class="flex flex-row justify-start content-center items-center gap-1 p-2">
+          {d.tecnologies.map((t) => (
+            <img src={t} alt="..." class="w-5  filter grayscale" />
+          ))}
+        </div>
+      </div>
+    ))
+  }
 </div>
