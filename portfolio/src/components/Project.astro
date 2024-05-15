@@ -46,19 +46,31 @@ const data = [
 ];
 ---
 
-<div class="grid grid-cols-2 md:grid-cols-3 md:grid-rows-3 gap-1 md:gap-4">
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-4">
   {
     data.map((d, i) => (
       <div
-        class={`bg-white shadow rounded ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+        class={`bg-white shadow rounded flex justify-center content-center items-center flex-col pb-1 ${i === 0 ? "md:col-span-2 md:row-span-2 md:" : ""}`}
       >
-        <img src={d.image} alt="..." class="w-full h-32 object-cover" />
-        <p class="px-1 mt-1 text-[12px] font-bold">{d.title}</p>
-        <div class="flex flex-row justify-start content-center items-center gap-1 p-2">
+        <img
+          src={d.image}
+          alt="..."
+          class={`w-full h-auto object-cover${i === 0 ? " md:h-auto  pb-4" : ""}`}
+        />
+        <div class="flex flex-row justify-start content-center items-center gap-1 px-2 bg-sky-950  my-2 py-1 rounded-full ">
           {d.tecnologies.map((t) => (
-            <img src={t} alt="..." class="w-5  filter grayscale" />
+            <img
+              src={t}
+              alt="..."
+              class={`w-7  filter grayscale ${i === 0 ? "md:w-10" : ""}`}
+            />
           ))}
         </div>
+        <button
+          class={`bg-black text-white rounded-md px-4 mb-1 py-1  ${i === 0 ? "md:px-2 md:text-[200%] md:mb-4" : ""} `}
+        >
+          Entrar
+        </button>
       </div>
     ))
   }
