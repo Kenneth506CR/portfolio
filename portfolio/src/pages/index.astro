@@ -24,9 +24,24 @@ const courses = await responseCourses.json();
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Kenneth Rodríguez - Ingeniero en Sistemas</title>
+    <link rel="icon" href="/public/astro.svg" type="image.svg" />
+    <meta
+      name="description"
+      content="Portafolio de Kenneth Rodríguez, ingeniero en sistemas."
+    />
+    <meta
+      name="keywords"
+      content="Kenneth Rodríguez, Portafolio, Ingeniero en sistemas, FrondEnd, Desarrollador web"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Portafolio de Kenneth Rodríguez" />
+    <meta
+      property="og:description"
+      content="Bienvenido a mi portafolio. Soy un ingeniero en sistemas apasionado por el desarrollo de software."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <!--   SECTION BODY -->
@@ -43,12 +58,13 @@ const courses = await responseCourses.json();
     <!-- MAIN -->
     <main class="mx-4">
       <!-- SECTION ABOUT ME -->
-      <article>
+      <article id="inicio">
         <About />
       </article>
 
       <!-- SECTION SKILLS -->
       <section
+        id="habilidades"
         class="max-w-[650px] m-auto flex flex-row flex-wrap justify-center content-center items-center gap-[8px]"
       >
         <h2 class="text-black w-full text-center py-8">HABILIDADES</h2>
@@ -57,6 +73,7 @@ const courses = await responseCourses.json();
 
       <!-- SECTION COURSES -->
       <section
+        id="formacion"
         class="flex flex-col justify-center content-center items-center gap-[2px]"
       >
         <h2 class="text-black mb-6 mt-14">FORMACION</h2>
@@ -75,6 +92,7 @@ const courses = await responseCourses.json();
 
       <!-- SECCION EXPERIENCES -->
       <section
+        id="experiencias"
         class="flex flex-col justify-evenly content-center items-center py-4 gap-[20px]"
       >
         <h2 class="text-black my-8">EXPERIENCIA LABORAL</h2>
@@ -86,13 +104,13 @@ const courses = await responseCourses.json();
       </section>
 
       <!--SECTION PROJECTS -->
-      <section>
+      <section id="proyectos">
         <h2 class="text-black text-center py-8">PROYECTOS</h2>
         <Project />
       </section>
 
       <!--SECTION FORM -->
-      <form method="post" class="py-8">
+      <form method="post" class="py-8" id="contacto">
         <h2 class="text-black text-center py-8">CONTACTO</h2>
         <Form />
       </form>
