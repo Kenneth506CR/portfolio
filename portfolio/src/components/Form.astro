@@ -2,6 +2,26 @@
 
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    document
+      .getElementById("contacto")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let name = (document.getElementById("name") as HTMLInputElement).value;
+        let email = (document.getElementById("email") as HTMLInputElement)
+          .value;
+        let subject = (document.getElementById("subject") as HTMLInputElement)
+          .value;
+        let message = (document.getElementById("message") as HTMLInputElement)
+          .value;
+
+        window.location.href = `mailto:kenneth2741999@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nombre: ${name}\nEmail: ${email}\nMensaje: ${message}`)}`;
+      });
+  });
+</script>
+
 <div class="bg-black flex flex-col gap-4 p-4 rounded-md shadow-md shadow-black">
   <label
     for="name"

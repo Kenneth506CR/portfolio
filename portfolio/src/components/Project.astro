@@ -4,11 +4,13 @@ const data = [
     image: "/public/Aperia.png",
     title: "APERIA",
     tecnologies: ["/public/html5.svg", "/public/css3.svg"],
+    link: "https://celadon-pixie-74ad9e.netlify.app/",
   },
   {
     image: "/public/Recetas.png",
     title: "RECETAS",
     tecnologies: ["/public/html5.svg", "/public/css3.svg"],
+    link: "https://hilarious-biscotti-383cc6.netlify.app/",
   },
   {
     image: "/public/Presupuesto.png",
@@ -18,11 +20,17 @@ const data = [
       "/public/css3.svg",
       "/public/javascript.svg",
     ],
+    link: "https://jazzy-ganache-33f28e.netlify.app/",
   },
   {
-    image: "/public/Cursos.png",
-    title: "PLATAFORMA DE CURSOS",
-    tecnologies: ["/public/html5.svg", "/public/css3.svg"],
+    image: "/public/Pokedex.png",
+    title: "POKEDEX API",
+    tecnologies: [
+      "/public/html5.svg",
+      "/public/css3.svg",
+      "/public/javascript.svg",
+    ],
+    link: "https://fantastic-mermaid-14fb56.netlify.app/",
   },
   {
     image: "/public/Barberia.png",
@@ -32,6 +40,7 @@ const data = [
       "/public/css3.svg",
       "/public/javascript.svg",
     ],
+    link: "https://deft-strudel-2455f0.netlify.app/",
   },
   {
     image: "/public/Recetas-Angular.png",
@@ -42,6 +51,7 @@ const data = [
       "/public/javascript.svg",
       "/public/angular.svg",
     ],
+    link: "https://wondrous-griffin-f94503.netlify.app/",
   },
 ];
 ---
@@ -57,6 +67,7 @@ const data = [
           alt="..."
           class={`w-full h-auto object-cover${i === 0 ? " md:h-auto  pb-4" : ""}`}
         />
+        <h3>{d.title}</h3>
         <div class="flex flex-row justify-start content-center items-center gap-1 px-2 bg-sky-950  my-2 py-1 rounded-full ">
           {d.tecnologies.map((t) => (
             <img
@@ -66,11 +77,14 @@ const data = [
             />
           ))}
         </div>
-        <button
-          class={`bg-black text-white rounded-md px-4 mb-1 py-1  ${i === 0 ? "md:px-2 md:text-[200%] md:mb-4" : ""} `}
-        >
-          Entrar
-        </button>
+        <a href={d.link} target="_blank">
+          {" "}
+          <button
+            class={`bg-black text-white rounded-md px-4 mb-1 py-1  ${i === 0 ? "md:px-2 md:text-[200%] md:mb-4" : ""} `}
+          >
+            Entrar
+          </button>
+        </a>
       </div>
     ))
   }
