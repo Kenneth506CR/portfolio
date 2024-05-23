@@ -1,57 +1,119 @@
 ---
-const data = [
-  {
-    image: "/public/Aperia.png",
-    title: "APERIA",
-    tecnologies: ["/public/html5.svg", "/public/css3.svg"],
-    link: "https://celadon-pixie-74ad9e.netlify.app/",
-  },
-  {
-    image: "/public/Recetas.png",
-    title: "RECETAS",
-    tecnologies: ["/public/html5.svg", "/public/css3.svg"],
-    link: "https://hilarious-biscotti-383cc6.netlify.app/",
-  },
-  {
-    image: "/public/Presupuesto.png",
-    title: "GATOS MENSUALES",
-    tecnologies: [
-      "/public/html5.svg",
-      "/public/css3.svg",
-      "/public/javascript.svg",
-    ],
-    link: "https://jazzy-ganache-33f28e.netlify.app/",
-  },
-  {
-    image: "/public/Pokedex.png",
-    title: "POKEDEX API",
-    tecnologies: [
-      "/public/html5.svg",
-      "/public/css3.svg",
-      "/public/javascript.svg",
-    ],
-    link: "https://fantastic-mermaid-14fb56.netlify.app/",
-  },
-  {
-    image: "/public/Barberia.png",
-    title: "BARBERIA",
-    tecnologies: [
-      "/public/html5.svg",
-      "/public/css3.svg",
-      "/public/javascript.svg",
-    ],
-    link: "https://deft-strudel-2455f0.netlify.app/",
-  },
-  {
-    image: "/public/Recetas-Angular.png",
-    title: "PLATILLOS TIPICOS",
-    tecnologies: [
-      "/public/html5.svg",
-      "/public/css3.svg",
-      "/public/javascript.svg",
-      "/public/angular.svg",
-    ],
-    link: "https://wondrous-griffin-f94503.netlify.app/",
-  },
-];
+
 ---
+
+<div class="relative w-full flex overflow-x-hidden">
+  <div class="flex transition-transform duration-500 ease-in-out" id="carousel">
+    <!-- Los elementos del carrusel se generarán dinámicamente -->
+  </div>
+
+  <button
+    class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black px-4 py-2 font-bold text-xl rounded-full opacity-80 hover:opacity-100 hover:scale-105 transition duration-200"
+    id="prev">{"<"}</button
+  >
+  <button
+    class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black px-4 py-2 font-bold text-xl rounded-full opacity-80 hover:opacity-100 hover:scale-105 transition duration-200"
+    id="next">{">"}</button
+  >
+</div>
+
+<script>
+  // Tus datos aquí...
+  const data = [
+    {
+      image: "/public/Aperia.png",
+      title: "APERIA",
+      tecnologies: ["/public/html5.svg", "/public/css3.svg"],
+      link: "https://celadon-pixie-74ad9e.netlify.app/",
+    },
+    {
+      image: "/public/Recetas.png",
+      title: "RECETAS",
+      tecnologies: ["/public/html5.svg", "/public/css3.svg"],
+      link: "https://hilarious-biscotti-383cc6.netlify.app/",
+    },
+    {
+      image: "/public/Presupuesto.png",
+      title: "GATOS MENSUALES",
+      tecnologies: [
+        "/public/html5.svg",
+        "/public/css3.svg",
+        "/public/javascript.svg",
+      ],
+      link: "https://jazzy-ganache-33f28e.netlify.app/",
+    },
+    {
+      image: "/public/Pokedex.png",
+      title: "POKEDEX API",
+      tecnologies: [
+        "/public/html5.svg",
+        "/public/css3.svg",
+        "/public/javascript.svg",
+      ],
+      link: "https://fantastic-mermaid-14fb56.netlify.app/",
+    },
+    {
+      image: "/public/Barberia.png",
+      title: "BARBERIA",
+      tecnologies: [
+        "/public/html5.svg",
+        "/public/css3.svg",
+        "/public/javascript.svg",
+      ],
+      link: "https://deft-strudel-2455f0.netlify.app/",
+    },
+    {
+      image: "/public/Recetas-Angular.png",
+      title: "PLATILLOS TIPICOS",
+      tecnologies: [
+        "/public/html5.svg",
+        "/public/css3.svg",
+        "/public/javascript.svg",
+        "/public/angular.svg",
+      ],
+      link: "https://wondrous-griffin-f94503.netlify.app/",
+    },
+  ];
+
+  const carousel = document.querySelector("#carousel") as HTMLElement;
+  const prevButton = document.querySelector("#prev") as HTMLElement;
+  const nextButton = document.querySelector("#next") as HTMLElement;
+  let index = 0;
+
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  prevButton.addEventListener("click", () => {
+    index = index === 0 ? carousel.children.length - 1 : index - 1;
+    updateCarousel();
+  });
+
+  nextButton.addEventListener("click", () => {
+    index = index === carousel.children.length - 1 ? 0 : index + 1;
+    updateCarousel();
+  });
+
+  // Generar dinámicamente los elementos del carrusel
+  data.forEach((item) => {
+    const div = document.createElement("div");
+    div.className = "w-full flex-none flex items-center justify-center";
+
+    const img = document.createElement("img");
+    img.src = item.image;
+    img.alt = item.title;
+    img.className = "w-full object-cover  backdrop-grayscale-0";
+
+    // Crear el botón
+    const button = document.createElement("a");
+    button.href = item.link;
+    button.textContent = "Visualizar";
+    button.target = "_blank";
+    button.className =
+      "absolute bottom-2 md:bottom-6 backdrop-blur-md px-2 py-1 text-white rounded hover:bg-black transition duration-200 rounded-lg border-2 border-white shadow-black shadow-lg ";
+
+    div.appendChild(img);
+    div.appendChild(button); // Agregar el botón al div
+    carousel.appendChild(div);
+  });
+</script>

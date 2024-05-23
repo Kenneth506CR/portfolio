@@ -96,11 +96,15 @@ const courses = await responseCourses.json();
         class="flex flex-col justify-evenly content-center items-center py-4 gap-[20px]"
       >
         <h2 class="text-black my-8">EXPERIENCIA LABORAL</h2>
-        {
-          experiences.map((experience) => (
-            <Experience experience={experience} />
-          ))
-        }
+        <div
+          class="flex flex-row justify-evenly items-center content-center flex-wrap gap-4"
+        >
+          {
+            experiences.map((experience) => (
+              <Experience experience={experience} />
+            ))
+          }
+        </div>
       </section>
 
       <!--SECTION PROJECTS -->
@@ -110,7 +114,11 @@ const courses = await responseCourses.json();
       </section>
 
       <!--SECTION FORM -->
-      <form method="post" class="py-8" id="contacto">
+      <form
+        method="post"
+        class="py-8 flex flex-col justify-center items-center content-center"
+        id="contacto"
+      >
         <h2 class="text-black text-center py-8">CONTACTO</h2>
         <Form />
       </form>
