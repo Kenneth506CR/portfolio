@@ -72,12 +72,11 @@ const courses = await responseCourses.json();
       </section>
 
       <!-- SECTION COURSES -->
-      <section
-        id="formacion"
-        class="flex flex-col justify-center content-center items-center gap-[2px]"
-      >
-        <h2 class="text-black mb-6 mt-14">FORMACION</h2>
-        <div>
+      <section id="formacion">
+        <h2 class="text-black mb-6 mt-14 text-center">FORMACION</h2>
+        <div
+          class="flex flex-col justify-center content-center items-center gap-[2px] md:flex-row md:flex-wrap"
+        >
           <ul>
             {
               courses.map((course) => (
