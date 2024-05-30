@@ -1,49 +1,4 @@
 {
-  "experiences": [
-    {
-      "company": "Altiva Soluciones S.A",
-      "image": "/public/Altiva.png",
-      "position": "Fullstack Developer",
-      "date": "6/2023 - 12/2023",
-      "technologies": [
-        "C#",
-        ".Net",
-        "SQL server",
-        "React",
-        "React Native",
-        "Bootstrap"
-      ],
-      "tasks": [
-        "Desarrollo de módulos para la aplicación web principal de la empresa, abarcando tanto el Frontend como el Backend.",
-        "Tecnologías Frontend como React Js y React Native, así como el framework Bootstrap para el diseño.",
-        "Implementación del Backend utilizando .Net y Swagger para la documentación además del manejo de la Base de datos SQL Server.",
-        "Diseño e implementación de funcionalidades para la generación de tickets y facturas utilizando JSPDF."
-      ],
-      "achievements": "Concluir con los módulos asignados en la aplicación web y pasar a aplicarlo a una aplicación móvil para un cliente en específico."
-    },
-    {
-      "company": "Bio&Gen",
-      "image": "/public/Bio&Gen.jpg",
-      "position": "Software Engineer",
-      "date": "6/2022 - 10/2023",
-      "technologies": [
-        "Node Js",
-        "Express Js",
-        "React",
-        "Mongo DB",
-        "Tailwind"
-      ],
-      "tasks": [
-        "Colaboración en la cobertura de necesidades del cliente junto a un equipo de trabajo, desde el levantamiento de requerimientos.",
-        "Desarrollo de la interfaz de usuario utilizando React JS y Tailwind CSS.",
-        "Implementación del Backend con Node Js y Express Js, enlazado con la Base de datos Mongo Db.",
-        "Realización de pruebas unitarias con Jest para garantizar la calidad del software.",
-        "Gestión de tareas utilizando Azure DevOps y aplicación de la metodología SCRUM para el seguimiento y control del proyecto."
-      ],
-      "achievements": "Culminar el proyecto en los tiempos establecidos en los sprints y realizar el deploy y entrega del proyecto al cliente"
-    }
-  ],
-
   "skills": [
     {
       "name": "HTML",
@@ -106,28 +61,28 @@
   "courses": [
     {
       "name": "Bachillerato en Ingenieria en Sistemas de Informacion",
-      "date": "2022 - 2023",
+      "date": "2023",
       "institution": "Universidad Nacional de Costa Rica"
     },
     {
-      "name": "Diplomado en Desarrollo de Aplicaciones Informarticas",
-      "date": "2019 - 2022",
+      "name": "Diplomado en Programación de Aplicaciones Informárticas",
+      "date": "2022",
       "institution": "Universidad Nacional de Costa Rica"
+    },
+    {
+      "name": "Fundamentos de Ciberseguridad",
+      "date": "Actualidad",
+      "institution": "CISCO"
+    },
+    {
+      "name": "Python Essentials I",
+      "date": "Actualidad",
+      "institution": "Instituto Nacional de Aprendizaje"
     },
     {
       "name": "SCRUM Fundamentals",
       "date": "2022",
       "institution": "SCRUMstudy"
-    },
-    {
-      "name": "Python Essentials",
-      "date": "2023 - Actualidad",
-      "institution": "Instituto Nacional de Aprendizaje"
-    },
-    {
-      "name": "Fundamentos de Ciberseguridad",
-      "date": "2023 - Actualidad",
-      "institution": "CISCO"
     }
   ]
 }

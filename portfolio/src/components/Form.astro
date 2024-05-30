@@ -22,57 +22,65 @@
   });
 </script>
 
-<div
-  class="bg-black flex flex-col gap-4 p-4 rounded-md shadow-md w-full shadow-black md:w-2/5"
+<form
+  method="post"
+  class="py-8 flex flex-col justify-center items-center content-center"
+  id="contacto"
 >
-  <label
-    for="name"
-    class="block text-sm font-medium text-gray-900 dark:text-white"
-    >Nombre</label
+  <h2 class="text-black text-center py-8">CONTACTO</h2>
+  <div
+    class="bg-black flex flex-col gap-4 p-4 rounded-md shadow-md w-full shadow-black md:w-2/5"
   >
-  <input
-    id="name"
-    type="text"
-    class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-    placeholder="John Carvajal"
-  />
+    <label
+      for="name"
+      class="block text-sm font-medium text-gray-900 dark:text-white"
+      >Nombre</label
+    >
+    <input
+      id="name"
+      type="text"
+      class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="John Carvajal"
+    />
 
-  <label
-    for="email"
-    class="block text-sm font-medium text-gray-900 dark:text-white">Email</label
-  >
-  <input
-    id="email"
-    type="email"
-    class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-    placeholder="John@gmail.com"
-  />
+    <label
+      for="email"
+      class="block text-sm font-medium text-gray-900 dark:text-white"
+      >Email</label
+    >
+    <input
+      id="email"
+      type="email"
+      class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="John@gmail.com"
+    />
 
-  <label
-    for="subject"
-    class="block text-sm font-medium text-gray-900 dark:text-white"
-    >Asunto</label
-  >
-  <input
-    id="subject"
-    type="text"
-    class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-    placeholder="Oferta Laboral"
-  />
+    <label
+      for="subject"
+      class="block text-sm font-medium text-gray-900 dark:text-white"
+      >Asunto</label
+    >
+    <input
+      id="subject"
+      type="text"
+      class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Oferta Laboral"
+    />
 
-  <label
-    for="message"
-    class="block text-sm font-medium text-gray-900 dark:text-white"
-    >Mensaje</label
-  >
-  <textarea
-    id="message"
-    rows="4"
-    class="resize-none block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-    placeholder="Escribe un comentario..."></textarea>
+    <label
+      for="message"
+      class="block text-sm font-medium text-gray-900 dark:text-white"
+      >Mensaje</label
+    >
+    <textarea
+      id="message"
+      rows="4"
+      class="resize-none block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      placeholder="Escribe un comentario..."></textarea>
 
-  <button
-    class="items-center bg-white text-black px-4 py-1 rounded-sm"
-    type="submit">Enviar</button
-  >
-</div>
+    <button
+      class="items-center bg-white text-black px-4 py-1 rounded-sm"
+      type="submit">Enviar</button
+    >
+  </div>
+</form>

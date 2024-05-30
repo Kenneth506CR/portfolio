@@ -20,24 +20,30 @@
   });
 </script>
 
-<input type="checkbox" id="menu-toggle" class="hidden" />
-<label
-  for="menu-toggle"
-  id="menu-button"
-  class="flex justify-end content-cemter items-center pr-2"
->
-  <img src="/public/menu.svg" alt="menu" class="w-[42px]" id="menu" />
-</label>
-
-<nav class="hidden absolute inset-0 top-24 backdrop-blur-sm z-10" id="nav">
-  <ul
-    class="bg-opacity-90 bg-white w-[90%] mx-auto m-auto rounded-md text-center flex flex-col gap-10 py-10 font-bold content-center"
+<header class="z-10
+bg-slate-400
+sticky
+top-0
+py-2">
+  <input type="checkbox" id="menu-toggle" class="hidden" />
+  <label
+    for="menu-toggle"
+    id="menu-button"
+    class="flex justify-end content-cemter items-center pr-2"
   >
-    <li><a href="#inicio">INICIO</a></li>
-    <li><a href="#habilidades">HABILIDADES</a></li>
-    <li><a href="#formacion">FORMACION</a></li>
-    <li><a href="#experiencias">EXPERIENCIA LABORAL </a></li>
-    <li><a href="#proyectos">PROYECTOS</a></li>
-    <li><a href="#contacto">CONTACTO</a></li>
-  </ul>
-</nav>
+    <img src="/public/menu.svg" alt="menu" class="w-[42px]" id="menu" />
+  </label>
+
+  <nav class="hidden absolute inset-0 top-24 backdrop-blur-sm z-10" id="nav">
+    <ul
+      class="bg-opacity-90 bg-white w-[90%] mx-auto m-auto rounded-md text-center flex flex-col gap-10 py-10 font-bold content-center"
+    >
+      <li><a href="#inicio">INICIO</a></li>
+      <li><a href="#habilidades">HABILIDADES</a></li>
+      <li><a href="#formacion">FORMACION</a></li>
+      <li><a href="#experiencias">EXPERIENCIA LABORAL </a></li>
+      <li><a href="#proyectos">PROYECTOS</a></li>
+      <li><a href="#contacto">CONTACTO</a></li>
+    </ul>
+  </nav>
+</header>

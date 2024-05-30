@@ -10,12 +10,10 @@ import Form from "../components/Form.astro";
 import Footer from "../components/Footer.astro";
 
 /* GET DATA TO JSON SERVER */
-const responseExperiences = await fetch("http://localhost:3000/experiences");
 const responseSkills = await fetch("http://localhost:3000/skills");
 const responseCourses = await fetch("http://localhost:3000/courses");
 
 /* FORMAT JSON AND SAVE TO VARIABLE */
-const experiences = await responseExperiences.json();
 const skills = await responseSkills.json();
 const courses = await responseCourses.json();
 ---
@@ -47,20 +45,12 @@ const courses = await responseCourses.json();
   <!--   SECTION BODY -->
   <body class="bg-gradient-to-b from-slate-800 to-slate-300 font-principal">
     <!-- HEADER -->
-    <header class="z-10
-      bg-slate-400
-      sticky
-      top-0
-      py-2">
-      <Header />
-    </header>
+    <Header />
 
     <!-- MAIN -->
     <main class="mx-4">
       <!-- SECTION ABOUT ME -->
-      <article id="inicio">
-        <About />
-      </article>
+      <About />
 
       <!-- SECTION SKILLS -->
       <section
@@ -74,10 +64,10 @@ const courses = await responseCourses.json();
       <!-- SECTION COURSES -->
       <section id="formacion">
         <h2 class="text-black mb-6 mt-14 text-center">FORMACION</h2>
-        <div
-          class="flex flex-col justify-center content-center items-center gap-[2px] md:flex-row md:flex-wrap"
-        >
-          <ul>
+        <div>
+          <ul
+            class="flex flex-col justify-center w-full content-center items-center gap-[4px] md:flex-row md:flex-wrap md:gap-4"
+          >
             {
               courses.map((course) => (
                 <li class="text-slate-200">
@@ -90,43 +80,14 @@ const courses = await responseCourses.json();
       </section>
 
       <!-- SECCION EXPERIENCES -->
-      <section
-        id="experiencias"
-        class="flex flex-col justify-evenly content-center items-center py-4 gap-[20px]"
-      >
-        <h2 class="text-black my-8">EXPERIENCIA LABORAL</h2>
-        <div
-          class="flex flex-row justify-evenly items-center content-center flex-wrap gap-4"
-        >
-          {
-            experiences.map((experience) => (
-              <Experience experience={experience} />
-            ))
-          }
-        </div>
-      </section>
+      <Experience />
 
       <!--SECTION PROJECTS -->
-      <section id="proyectos">
-        <h2 class="text-black text-center py-8">PROYECTOS</h2>
-        <Project />
-      </section>
-
+      <Project />
       <!--SECTION FORM -->
-      <form
-        method="post"
-        class="py-8 flex flex-col justify-center items-center content-center"
-        id="contacto"
-      >
-        <h2 class="text-black text-center py-8">CONTACTO</h2>
-        <Form />
-      </form>
+      <Form />
     </main>
     <!-- SECTION FOOTER -->
-    <footer
-      class="bg-black gap-4 py-8 text-white flex flex-col justify-around content-center flex-wrap px-4"
-    >
-      <Footer />
-    </footer>
+    <Footer />
   </body>
 </html>
